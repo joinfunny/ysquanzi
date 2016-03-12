@@ -1,0 +1,146 @@
+@import "../../less_fn/fn.less";
+@import (less) "../../../vendors/normalize.css/normalize.css";
+@import (less) "../../../vendors/bootstrap/css/bootstrap.css";
+@import (less) "../../../vendors/fonticon/css/font-awesome.css";
+@import "./global.less";
+@import "./widget.less";
+@import (less) "../../sprite/icons/icons.css";
+
+body {
+    background: #f4f8f7;
+}
+a{
+    color:#323232;
+}
+.p_manage_list{
+    .lh{
+        height:34px;
+        line-height:34px;
+    }
+}
+
+//机构财务-收入
+.p_income{
+    .tab-content{
+        margin-top: 15px;
+        }
+    .nav-tabs{
+        border-bottom: 2px solid #46b450;
+        }
+    .nav-tabs{
+        li{
+            margin-bottom: -2px;
+       }
+    }
+    .common{
+        color: #46b450;
+            cursor: default;
+            background-color: #f2efef;
+            border: 1px solid #46b450;
+            border-bottom-color: transparent;
+    }
+    .nav-tabs{
+        >li{
+             >a{           
+                color: #575656;
+                border: 1px solid transparent;
+                border-radius: 0;
+            }
+            &.active{
+                >a{
+                   .common();
+                   &:focus{
+                       .common();
+                   } 
+                   &:hover{
+                       .common();
+                   } 
+                }
+            }
+        }
+       
+    }
+    
+    
+    .p15{
+        padding: 15px 0;
+        }
+
+}
+//机构管理列表——查看
+.p_manage_list_see{
+    .see_table{
+       tr{
+         td{
+               vertical-align: top;
+            }  
+       }  
+    } 
+    .thumbnail{
+        padding:0px;
+        border:2px solid #dcdcdc;
+    }
+}
+//机构管理列表——修改
+.p_manage_list_update{
+    .wid{
+        width:50%;
+    }
+    .wid_select{
+        width:25%;
+        display: inline-block;
+    }
+    .thumbnail{
+        padding:0px;
+        border:0;
+        img{
+            width: 118px;
+            height: 88px;
+            margin-top: 11px;
+            border: 2px solid #dcdcdc;
+            &.active{
+               border: 2px solid #46b450; 
+            }
+        }
+        i{
+            background: url('../images/close.png') no-repeat; 
+            position: absolute;
+            top: 1px;
+            right: 8px;
+            z-index: 1000;
+            display:none;
+            width: 21px;
+            height: 21px;
+            &.dis_inb{
+                display:inline-block;
+            }
+        }
+        
+    }
+    .btn{
+        color:#ffffff;
+        &:hover{
+            background-color: #b7b7b7;
+        }
+        &.bg-green{
+            &:hover{
+                background-color: #3fa248;
+            }
+        }
+    }
+    
+    table{
+        tbody{
+            tr{
+                td{
+                    padding-bottom:20px;
+                    &.vtt{
+                        vertical-align: top;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,155 @@
+//header
+.w_header{
+    line-height:77px ;
+    .cor_blue{
+        color:#3300ff;
+    }
+    
+    
+}
+//nav
+.w_nav{
+    .navbar-inverse{
+      .navbar-nav{
+          >li{
+             >a{
+                color:#ffffff; 
+             }
+         }
+         >.active{
+              >a{
+                  background-color: #3c9944 !important;
+            }
+         }
+         
+     }  
+    } 
+    
+}
+//左侧nav
+.w_nav_left{
+    height:515px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    
+   
+    a.list-group-item:hover{
+        border-left:4px solid #008800 ;
+        background: #daf0dc;
+        color:#46b450;
+    }
+    .list-group-item{
+        border:0;
+        font-size:14px;
+        color:#323232;
+        border-left: 4px solid #fff;
+        &:first-child{
+            border-bottom:2px solid #dcdcdc;
+            font-weight: bold;
+        }
+        &.active{
+            border-left:4px solid #008800 ;
+            background: #daf0dc;
+            color:#46b450;
+        }
+    }
+}
+//圆圈
+.w_span_circle{
+    width:28px;
+    height:28px;
+    border-radius: 28px;
+    color:#ffffff;
+    display:inline-block;
+    line-height: 28px;
+        &.bg_o{
+            background-color: #eeac56;
+        }
+        &.bg_p{
+            background-color: #faa7de;
+        }
+        &.bg_b{
+            background-color: #6dd4fa;
+        }
+}
+//面板标题
+.w_panel_title{
+    > .panel-heading{
+        background-color:#f2efef;
+    }
+}
+//table
+.w_table{
+    > thead{
+       > tr{
+          > th{
+                vertical-align: middle;
+                background-color: #f4f8f7;
+                text-align: center;
+            }  
+       } 
+    }
+    > tbody{
+        >tr{
+            >td{
+                text-align: center;
+                vertical-align: middle;
+                &.pass{
+                   color:#46b450; 
+                }
+                a{
+                    color:#323232;
+                    &:hover{
+                        border:1px solid #aaaaaa;
+                        border-radius: 2px;
+                        background-color: #eeeeee;
+                        text-decoration: none;
+                        color:#323232;
+                    }
+                }
+            }
+            &:hover{
+                background-color: #EEEEEE;
+            }
+        }
+       
+        
+    } 
+    
+}
+//分页
+.w_page{
+    > .active{
+         > a{
+                background-color: #46b450;
+            }
+    }
+}
+//遮罩层
+.w_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.w_cover_mask{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+}
+//模态框
+.w_modal{
+    .bor0{
+        border:0;
+    }
+    .modal-dialog{
+        width: 398px;
+        height:221px;
+    }
+    .btn{
+        width: 122px;
+        height:43px;
+    }
+}
