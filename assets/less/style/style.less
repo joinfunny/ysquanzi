@@ -5,10 +5,116 @@
 @import "./global.less";
 @import "./widget.less";
 @import (less) "../../sprite/icons/icons.css";
-
 body {
     background: #f4f8f7;
 }
-a{
-    color:#323232;
+
+a {
+    color: #323232;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.clearfloat {
+    clear: both
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    .greenbar {
+        margin-top: 20px;
+        background-color: #2cb673;
+        height: 6px;
+    }
+    .back {
+        background: #000;
+        .ctx {
+            width: 1200px;
+            margin: auto;
+            .logo {
+                float: left;
+                padding: 10px;
+                margin: 10px 0 0 150px;
+            }
+            .right {
+                float: right;
+                margin: 40px 50px 0 0;
+                a {
+                    color: #aaa;
+                    // font-weight: 600;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                span {
+                    color: #fff;
+                }
+            }
+            .form {
+                width: 400px;
+                float: left;
+                margin: 0 0 0 150px;
+                position: relative;
+                display: inline-table;
+                form {
+                    input[type='text'] {
+                        width: 100%;
+                        border: 1px solid #eee!important;
+                        height: 40px;
+                        margin-left: 0;
+                        padding-left: 20px;
+                        color: #333;
+                        font-size: 14px;
+                        font-weight: 300;
+                        background-color: #f7f7f7;
+                    }
+                    input[type='submit'] {
+                        font-family: FontAwesome;
+                        margin-left: -40px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        color: #000;
+                        border: none;
+                        background-color: transparent;
+                        font-size: 22px;
+                        padding: 5px 9px 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+.content{
+	background: #ccc;
+	height: 1000px;
+	.center-box{
+		overflow: hidden;
+		ul{
+			li{
+				width: 100%;
+				a{
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.introduce{
+		text-align: center;
+		margin: 10px 0 30px;
+	    line-height: 1.2em;
+	    color: #333;
+	    font-size: 46px;
+	    font-weight: 200;
+	    letter-spacing: -1px;
+	}
+	.works{
+		width: 1200px;
+		text-align: center;
+	}
 }
